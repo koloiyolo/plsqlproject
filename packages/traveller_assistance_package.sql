@@ -1,5 +1,5 @@
 
---          PACKAGE
+--------------TRAVELER ASSISTANCE PACKAGE--------------
 
 CREATE OR REPLACE PACKAGE traveler_assistance_package AS
     TYPE country_type IS RECORD(
@@ -28,7 +28,8 @@ CREATE OR REPLACE PACKAGE traveler_assistance_package AS
     PROCEDURE print_language_array(country_langs country_languages_type);
 END;
 
---          PACKAGE BODY           
+--------------TRAVELER ASSISTANCE PACKAGE BODY--------------     
+
 CREATE OR REPLACE PACKAGE BODY traveler_assistance_package AS
     --P1
     PROCEDURE country_demographics(v_country_name VARCHAR2) IS
