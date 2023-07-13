@@ -15,7 +15,7 @@ CREATE OR REPLACE PACKAGE traveler_admin_package AS
     PROCEDURE print_dependent_objects(objects IN object_array);
 END;
 
---------------TRAVELER ADMIN PACKAGE BODY--------------
+--------------INIT PROCEDURES--------------
 
 CREATE OR REPLACE PACKAGE BODY traveler_admin_package AS
     --P1
