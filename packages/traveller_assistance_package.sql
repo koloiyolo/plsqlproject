@@ -28,7 +28,7 @@ CREATE OR REPLACE PACKAGE traveler_assistance_package AS
     PROCEDURE print_language_array(country_langs country_languages_type);
 END;
 
---------------TRAVELER ASSISTANCE PACKAGE BODY--------------     
+--------------INIT PROCEDURES--------------     
 
 CREATE OR REPLACE PACKAGE BODY traveler_assistance_package AS
     --P1
