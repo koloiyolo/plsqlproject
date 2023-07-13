@@ -1,3 +1,6 @@
+--------------IMPORTANT!!!!!!!!--------------
+set serveroutput on
+
 --------------EXECUTIONS: TRAVELLER ASSISTANCE PACKAGE--------------
 
 ------P1------
@@ -6,7 +9,7 @@ BEGIN
 END;
 ------P2------
 DECLARE
-    country_name VARCHAR2(50) := 'Belize';
+    country_name VARCHAR2(50) := 'Navassa Island';
     country TRAVELER_ASSISTANCE_PACKAGE.country_type;
 BEGIN
     TRAVELER_ASSISTANCE_PACKAGE.FIND_REGION_AND_CURRENCY(country_name, country);
@@ -23,7 +26,7 @@ BEGIN
 END;
 ------P5 & P6------
 DECLARE
-    country_name VARCHAR2(50) := 'Belize';
+    country_name VARCHAR2(50) := 'Barbados';
     country_langs TRAVELER_ASSISTANCE_PACKAGE.country_languages_type;
 BEGIN
     TRAVELER_ASSISTANCE_PACKAGE.COUNTRY_LANGUAGES(country_name, country_langs);
